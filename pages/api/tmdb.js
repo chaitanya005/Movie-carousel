@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiKey = "f806f85625e12956ba422b0ef6c62800";
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 const baseUrl = "https://api.themoviedb.org/3";
 
 export async function getTopRatedMovies() {
